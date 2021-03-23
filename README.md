@@ -15,7 +15,7 @@ Compatible with docker-compose v2 schemas.
 version: "2.1"
 services:
   plex:
-    image: ghcr.io/linuxserver/plex
+    image: kemmor/plex-hw-amd
     container_name: plex
     network_mode: host
     environment:
@@ -44,7 +44,7 @@ docker run -d \
   -v /path/to/tvseries:/tv \
   -v /path/to/movies:/movies \
   --restart unless-stopped \
-  ghcr.io/linuxserver/plex
+  kemmor/plex-hw-amd
 ```
 
 For detailed info about parameters go to https://github.com/linuxserver/docker-plex#parameters 
